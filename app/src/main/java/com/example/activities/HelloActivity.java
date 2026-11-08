@@ -15,7 +15,7 @@ public class HelloActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_hello);
-        InsetsUtil.applySystemBarInsets(findViewById(R.id.main));
+        InsetsUtil.setupToolbarAndInsets(this);
 
         // Vrednost števca preberemo iz namena, s katerim je bila aktivnost zagnana.
         int count = getIntent().getIntExtra(MainActivity.EXTRA_COUNT, 0);

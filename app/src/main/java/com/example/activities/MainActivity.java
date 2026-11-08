@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        InsetsUtil.applySystemBarInsets(findViewById(R.id.main));
+        InsetsUtil.setupToolbarAndInsets(this);
 
         mShowCount = findViewById(R.id.show_count);
 

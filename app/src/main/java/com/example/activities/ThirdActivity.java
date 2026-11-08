@@ -20,8 +20,8 @@ public class ThirdActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_third);
 
+        InsetsUtil.setupToolbarAndInsets(this);
         View root = findViewById(R.id.main);
-        InsetsUtil.applySystemBarInsets(root);
 
         mCount = getIntent().getIntExtra(MainActivity.EXTRA_COUNT, 0);
         TextView showCount = findViewById(R.id.show_count);
